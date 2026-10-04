@@ -134,3 +134,45 @@ alt="Connect Background"
 <code>BUILD • CREATE • INNOVATE • REPEAT</code>
 
 </div>
+<br>
+
+<h2 align="center">
+  🌐 CONNECT WITH ME
+</h2>
+
+<div align="center">
+
+<img
+  src="./assets/connect-background.svg"
+  width="100%"
+  alt="Let's Connect"
+/>
+
+<br><br>
+
+<a href="https://github.com/shriharineural-stack">
+  <img
+    src="https://img.shields.io/badge/GITHUB-020617?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=ef233c"
+    alt="GitHub"
+  />
+</a>
+
+&nbsp;
+
+<!-- Replace YOUR_EMAIL with your real email -->
+<a href="mailto:YOUR_EMAIL">
+  <img
+    src="https://img.shields.io/badge/EMAIL-020617?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=ef233c"
+    alt="Email"
+  />
+</a>
+
+<br><br>
+
+<code>OPEN TO • COLLABORATION • LEARNING • INNOVATION</code>
+
+<br><br>
+
+<b>✦ LET'S BUILD SOMETHING GREAT ✦</b>
+
+</div>
