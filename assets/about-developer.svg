@@ -1,222 +1,110 @@
-<svg width="1600" height="500" viewBox="0 0 1600 500"
-xmlns="http://www.w3.org/2000/svg">
+<svg width="1600" height="900" viewBox="0 0 1600 900"
+     xmlns="http://www.w3.org/2000/svg">
 
-<defs>
+  <defs>
 
-<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-<stop offset="0%" stop-color="#020617"/>
-<stop offset="55%" stop-color="#0d0710"/>
-<stop offset="100%" stop-color="#19060b"/>
-</linearGradient>
+    <!-- DARK BACKGROUND -->
+    <linearGradient id="bg"
+                    x1="0%" y1="0%"
+                    x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#01030a"/>
+      <stop offset="50%" stop-color="#070817"/>
+      <stop offset="100%" stop-color="#15020a"/>
+    </linearGradient>
 
-<linearGradient id="red" x1="0%" x2="100%">
-<stop offset="0%" stop-color="#ff334f"/>
-<stop offset="50%" stop-color="#ff6b7d"/>
-<stop offset="100%" stop-color="#ef233c"/>
-</linearGradient>
+    <!-- NEON RED -->
+    <linearGradient id="neon"
+                    x1="0%" y1="0%"
+                    x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff1744"/>
+      <stop offset="50%" stop-color="#ff4d6d"/>
+      <stop offset="100%" stop-color="#ff1744"/>
+    </linearGradient>
 
-<filter id="glow">
-<feGaussianBlur stdDeviation="8" result="blur"/>
-<feMerge>
-<feMergeNode in="blur"/>
-<feMergeNode in="SourceGraphic"/>
-</feMerge>
-</filter>
+    <!-- GRID -->
+    <pattern id="grid"
+             width="42"
+             height="42"
+             patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42"
+            fill="none"
+            stroke="#ff1744"
+            stroke-opacity="0.09"
+            stroke-width="1"/>
+    </pattern>
 
-<filter id="soft">
-<feGaussianBlur stdDeviation="35"/>
-</filter>
+    <!-- RED GLOW -->
+    <filter id="neonGlow"
+            x="-100%"
+            y="-100%"
+            width="300%"
+            height="300%">
 
-<pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-<path d="M30 0H0V30"
-stroke="#ef4444"
-stroke-width="0.7"
-stroke-opacity="0.08"
-fill="none"/>
-</pattern>
+      <feGaussianBlur
+        stdDeviation="9"
+        result="blur"/>
 
-</defs>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
 
-<!-- Background -->
-<rect width="1600" height="500" fill="url(#bg)"/>
+    </filter>
 
-<!-- Grid -->
-<rect width="1600" height="500" fill="url(#grid)"/>
+    <!-- SOFT GLOW -->
+    <filter id="softGlow"
+            x="-100%"
+            y="-100%"
+            width="300%"
+            height="300%">
 
-<!-- Ambient red glow -->
-<ellipse
-cx="1180"
-cy="240"
-rx="380"
-ry="180"
-fill="#ef233c"
-opacity="0.10"
-filter="url(#soft)"/>
+      <feGaussianBlur stdDeviation="35"/>
 
-<!-- LEFT TERMINAL / CODE VISUAL -->
+    </filter>
 
-<rect
-x="90"
-y="85"
-width="650"
-height="330"
-rx="28"
-fill="#050810"
-opacity="0.95"/>
+    <!-- CENTER LIGHT -->
+    <radialGradient id="centerLight">
+      <stop offset="0%" stop-color="#ff1744" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ff1744" stop-opacity="0"/>
+    </radialGradient>
 
-<!-- terminal dots -->
+  </defs>
 
-<circle cx="125" cy="120" r="6" fill="#ef233c"/>
-<circle cx="150" cy="120" r="6" fill="#ff596d"/>
-<circle cx="175" cy="120" r="6" fill="#7f1d1d"/>
 
-<text
-x="125"
-y="175"
-font-family="monospace"
-font-size="20"
-fill="#ff465d">
+  <!-- BACKGROUND -->
 
-&gt; developer.init()
+  <rect
+    width="1600"
+    height="900"
+    fill="url(#bg)"/>
 
-</text>
 
-<text
-x="125"
-y="220"
-font-family="monospace"
-font-size="18"
-fill="#f8fafc">
+  <!-- TECH GRID -->
 
-&gt; name: SHRI HARI
+  <rect
+    width="1600"
+    height="900"
+    fill="url(#grid)"/>
 
-</text>
 
-<text
-x="125"
-y="260"
-font-family="monospace"
-font-size="18"
-fill="#f8fafc">
+  <!-- AMBIENT NEON LIGHT -->
 
-&gt; role: SOFTWARE DEVELOPER
+  <ellipse
+    cx="800"
+    cy="450"
+    rx="650"
+    ry="350"
+    fill="url(#centerLight)"
+    filter="url(#softGlow)"/>
 
-</text>
 
-<text
-x="125"
-y="300"
-font-family="monospace"
-font-size="18"
-fill="#f8fafc">
+  <!-- OUTER NEON FRAME -->
 
-&gt; focus: WEB • APP • AI
-
-</text>
-
-<text
-x="125"
-y="340"
-font-family="monospace"
-font-size="18"
-fill="#ff465d">
-
-&gt; status: BUILDING...
-
-</text>
-
-<text
-x="125"
-y="385"
-font-family="monospace"
-font-size="18"
-fill="#64748b">
-
-_
-
-</text>
-
-<!-- RIGHT AI VISUAL -->
-
-<circle
-cx="1130"
-cy="250"
-r="125"
-fill="#10070b"
-stroke="#ef334f"
-stroke-width="2"
-opacity="0.95"
-filter="url(#glow)"/>
-
-<circle
-cx="1130"
-cy="250"
-r="88"
-fill="none"
-stroke="#ff465d"
-stroke-width="2"
-stroke-dasharray="8 12"
-opacity="0.8"/>
-
-<!-- AI core -->
-
-<circle
-cx="1130"
-cy="250"
-r="42"
-fill="#ef233c"
-opacity="0.25"
-filter="url(#glow)"/>
-
-<circle
-cx="1130"
-cy="250"
-r="24"
-fill="url(#red)"
-filter="url(#glow)"/>
-
-<!-- neural nodes -->
-
-<g fill="#ff465d">
-
-<circle cx="1010" cy="185" r="6"/>
-<circle cx="1040" cy="330" r="6"/>
-<circle cx="1250" cy="180" r="6"/>
-<circle cx="1260" cy="325" r="6"/>
-<circle cx="1130" cy="105" r="6"/>
-<circle cx="1130" cy="395" r="6"/>
-
-</g>
-
-<!-- neural connections -->
-
-<g
-stroke="#ef334f"
-stroke-width="2"
-opacity="0.7">
-
-<line x1="1010" y1="185" x2="1130" y2="250"/>
-<line x1="1040" y1="330" x2="1130" y2="250"/>
-<line x1="1250" y1="180" x2="1130" y2="250"/>
-<line x1="1260" y1="325" x2="1130" y2="250"/>
-<line x1="1130" y1="105" x2="1130" y2="250"/>
-<line x1="1130" y1="395" x2="1130" y2="250"/>
-
-</g>
-
-<!-- Label -->
-
-<text
-x="1130"
-y="465"
-text-anchor="middle"
-font-family="Arial"
-font-size="18"
-letter-spacing="5"
-fill="#ff6678">
-
-AI • CODE • INNOVATION
-
-</text>
-
-</svg>
+  <rect
+    x="22"
+    y="22"
+    width="1556"
+    height="856"
+    rx="32"
+    fill
