@@ -10,27 +10,28 @@
 
 <br>
 
-<h2 align="center">👨‍💻 About Me</h2>
-
-<p align="center">
-AI&DS Student • Software Developer • Web • App • AI
-</p>
-
----
-
-### ⚡ What I Do
-
-- 🎓 AI&DS Student
-- 💻 Java • C • Python
-- 🌐 Web Development
-- 📱 App Development
-- 🧠 Artificial Intelligence
-- 🚀 Building projects and learning every day
-
----
+<h2 align="center">👨‍💻 ABOUT ME</h2>
 
 <div align="center">
 
+<img src="./assets/about-developer.svg" width="100%" alt="About Shri Hari">
+
+</div>
+
+<br>
+
+<div align="center">
+
+**AI&DS Student • Software Developer • Web • App • AI**
+
+<br><br>
+
+| 🧠 | 💻 | 🌐 | 🚀 |
+|---|---|---|---|
+| **AI & DS** | **Programming** | **Web & App** | **Building** |
+| Exploring AI | Java • C • Python | Modern Applications | Real-world Projects |
+
+</div>
 ### ✦ A BETTER TOMORROW IS BUILT BY CODE ✦
 
 `BUILD • CREATE • INNOVATE`
