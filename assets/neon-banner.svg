@@ -1,354 +1,127 @@
-<svg width="1600" height="500" viewBox="0 0 1600 500"
-     xmlns="http://www.w3.org/2000/svg">
-
-  <defs>
-
-    <!-- RED NEON TEXT GRADIENT -->
-    <linearGradient id="red-glow-grad"
-                    x1="0%" y1="0%"
-                    x2="100%" y2="0%">
-
-      <stop offset="0%" stop-color="#ff4458"/>
-      <stop offset="40%" stop-color="#ff1a35"/>
-      <stop offset="70%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#ff2a45"/>
-
-      <animate
-        attributeName="x1"
-        from="-100%"
-        to="100%"
-        dur="7s"
-        repeatCount="indefinite"/>
-
-      <animate
-        attributeName="x2"
-        from="0%"
-        to="200%"
-        dur="7s"
-        repeatCount="indefinite"/>
+<div align="center">
 
-    </linearGradient>
+<img
+  src="./assets/neon-banner.svg"
+  width="100%"
+  alt="SHRI HARI Software Developer"
+/>
 
+</div>
 
-    <!-- BORDER GRADIENT -->
-    <linearGradient id="border-grad"
-                    x1="0%" y1="0%"
-                    x2="100%" y2="0%">
+<br>
 
-      <stop offset="0%" stop-color="#7f1d1d"/>
-      <stop offset="30%" stop-color="#ef4444"/>
-      <stop offset="50%" stop-color="#ff4d6d"/>
-      <stop offset="70%" stop-color="#ef4444"/>
-      <stop offset="100%" stop-color="#7f1d1d"/>
+<h2 align="center">
+  👨‍💻 ABOUT ME
+</h2>
 
-      <animate
-        attributeName="x1"
-        from="-100%"
-        to="100%"
-        dur="5s"
-        repeatCount="indefinite"/>
+<div align="center">
 
-      <animate
-        attributeName="x2"
-        from="0%"
-        to="200%"
-        dur="5s"
-        repeatCount="indefinite"/>
-
-    </linearGradient>
-
-
-    <!-- RED NEON GLOW -->
-    <filter id="glow-red"
-            x="-50%"
-            y="-50%"
-            width="200%"
-            height="200%">
-
-      <feGaussianBlur
-        stdDeviation="8"
-        result="blur"/>
-
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-
-    </filter>
-
-
-    <!-- SOFT AMBIENT GLOW -->
-    <filter id="ambient-blur"
-            x="-50%"
-            y="-50%"
-            width="200%"
-            height="200%">
-
-      <feGaussianBlur stdDeviation="40"/>
-
-    </filter>
-
-
-    <!-- TECH GRID -->
-    <pattern id="tech-grid"
-             width="30"
-             height="30"
-             patternUnits="userSpaceOnUse">
-
-      <path
-        d="M 30 0 L 0 0 0 30"
-        fill="none"
-        stroke="#ef4444"
-        stroke-width="0.75"
-        stroke-opacity="0.10"/>
-
-    </pattern>
-
-
-    <!-- DARK BACKGROUND -->
-    <linearGradient id="background"
-                    x1="0%"
-                    y1="0%"
-                    x2="100%"
-                    y2="100%">
-
-      <stop offset="0%" stop-color="#020617"/>
-      <stop offset="50%" stop-color="#0b0b16"/>
-      <stop offset="100%" stop-color="#16070b"/>
-
-    </linearGradient>
-
-  </defs>
-
-
-  <!-- BACKGROUND -->
-  <rect
-    width="1600"
-    height="500"
-    fill="url(#background)"/>
-
-
-  <!-- GRID -->
-  <rect
-    width="1600"
-    height="500"
-    fill="url(#tech-grid)"/>
-
-
-  <!-- AMBIENT RED LIGHT -->
-  <ellipse
-    cx="800"
-    cy="250"
-    rx="600"
-    ry="180"
-    fill="#ef4444"
-    opacity="0.10"
-    filter="url(#ambient-blur)"/>
-
-
-  <!-- SIDE RED GLOW -->
-  <ellipse
-    cx="80"
-    cy="250"
-    rx="180"
-    ry="220"
-    fill="#ef4444"
-    opacity="0.08"
-    filter="url(#ambient-blur)"/>
-
-
-  <ellipse
-    cx="1520"
-    cy="250"
-    rx="180"
-    ry="220"
-    fill="#ef4444"
-    opacity="0.08"
-    filter="url(#ambient-blur)"/>
-
-
-  <!-- OUTER NEON BORDER -->
-  <rect
-    x="18"
-    y="18"
-    width="1564"
-    height="464"
-    rx="28"
-    fill="none"
-    stroke="url(#border-grad)"
-    stroke-width="2"
-    opacity="0.9"
-    filter="url(#glow-red)"/>
-
-
-  <!-- INNER BORDER -->
-  <rect
-    x="35"
-    y="35"
-    width="1530"
-    height="430"
-    rx="22"
-    fill="none"
-    stroke="#ef4444"
-    stroke-width="1"
-    stroke-opacity="0.18"/>
-
-
-  <!-- TOP LABEL -->
-  <text
-    x="800"
-    y="125"
-    text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="22"
-    font-weight="bold"
-    letter-spacing="7"
-    fill="#ff7180">
-
-    SOFTWARE DEVELOPER
-
-  </text>
-
-
-  <!-- MAIN NAME GLOW -->
-  <text
-    x="800"
-    y="235"
-    text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="92"
-    font-weight="900"
-    letter-spacing="8"
-    fill="url(#red-glow-grad)"
-    filter="url(#glow-red)">
-
-    SHRI HARI
-
-  </text>
-
-
-  <!-- MAIN NAME CLEAN LAYER -->
-  <text
-    x="800"
-    y="235"
-    text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="92"
-    font-weight="900"
-    letter-spacing="8"
-    fill="url(#red-glow-grad)">
-
-    SHRI HARI
-
-  </text>
-
-
-  <!-- SUBTITLE -->
-  <text
-    x="800"
-    y="295"
-    text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="21"
-    letter-spacing="5"
-    fill="#f8fafc">
-
-    WEB  •  APP  •  SOFTWARE  •  AI
-
-  </text>
-
-
-  <!-- TERMINAL -->
-  <rect
-    x="540"
-    y="340"
-    width="520"
-    height="58"
-    rx="29"
-    fill="#080b14"
-    stroke="#ef4444"
-    stroke-opacity="0.5"/>
-
-
-  <circle
-    cx="570"
-    cy="369"
-    r="5"
-    fill="#ef4444"
-    filter="url(#glow-red)"/>
-
-
-  <text
-    x="595"
-    y="377"
-    font-family="monospace"
-    font-size="18"
-    fill="#ff5368">
-
-    &gt; building_the_future_
-
-  </text>
-
-
-  <!-- LEFT DECORATION -->
-  <g
-    stroke="#ef4444"
-    fill="none"
-    opacity="0.75">
-
-    <path
-      d="M80 120 L80 80 L120 80"
-      stroke-width="2"/>
-
-    <path
-      d="M80 380 L80 420 L120 420"
-      stroke-width="2"/>
-
-    <circle
-      cx="80"
-      cy="250"
-      r="5"
-      fill="#ef4444"/>
-
-  </g>
-
-
-  <!-- RIGHT DECORATION -->
-  <g
-    stroke="#ef4444"
-    fill="none"
-    opacity="0.75">
-
-    <path
-      d="M1520 120 L1520 80 L1480 80"
-      stroke-width="2"/>
-
-    <path
-      d="M1520 380 L1520 420 L1480 420"
-      stroke-width="2"/>
-
-    <circle
-      cx="1520"
-      cy="250"
-      r="5"
-      fill="#ef4444"/>
-
-  </g>
-
-
-  <!-- BOTTOM TAG -->
-  <text
-    x="800"
-    y="445"
-    text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="15"
-    letter-spacing="4"
-    fill="#64748b">
-
-    &lt;/ BUILD • CREATE • INNOVATE &gt;
-
-  </text>
-
-</svg>
+<img
+  src="./assets/about-developer.svg"
+  width="100%"
+  alt="About Shri Hari"
+/>
+
+<br><br>
+
+<b>AI&DS Student • Software Developer • Web • App • AI</b>
+
+<br><br>
+
+<img
+  src="https://img.shields.io/badge/🧠%20AI%20%26%20DATA%20SCIENCE-020617?style=for-the-badge&labelColor=020617&color=ef233c"
+  alt="AI and Data Science"
+/>
+
+<img
+  src="https://img.shields.io/badge/💻%20PROGRAMMING-020617?style=for-the-badge&labelColor=020617&color=ef233c"
+  alt="Programming"
+/>
+
+<img
+  src="https://img.shields.io/badge/🌐%20WEB%20%26%20APP-020617?style=for-the-badge&labelColor=020617&color=ef233c"
+  alt="Web and App"
+/>
+
+<img
+  src="https://img.shields.io/badge/🚀%20BUILDING-020617?style=for-the-badge&labelColor=020617&color=ef233c"
+  alt="Building"
+/>
+
+<br><br>
+
+<code>Java</code>
+&nbsp;•&nbsp;
+<code>C</code>
+&nbsp;•&nbsp;
+<code>Python</code>
+&nbsp;•&nbsp;
+<code>JavaScript</code>
+&nbsp;•&nbsp;
+<code>Angular</code>
+&nbsp;•&nbsp;
+<code>AI</code>
+
+<br><br>
+
+<b>✦ A BETTER TOMORROW IS BUILT BY CODE ✦</b>
+
+</div>
+
+<br><br>
+
+<h2 align="center">
+  ⚡ WHAT I BUILD
+</h2>
+
+<div align="center">
+
+<br>
+
+<code>WEB APPLICATIONS</code>
+&nbsp;&nbsp; ✦ &nbsp;&nbsp;
+<code>MOBILE APPLICATIONS</code>
+&nbsp;&nbsp; ✦ &nbsp;&nbsp;
+<code>AI SOLUTIONS</code>
+
+<br><br>
+
+<code>SOFTWARE DEVELOPMENT</code>
+&nbsp;&nbsp; ✦ &nbsp;&nbsp;
+<code>DATA & TECHNOLOGY</code>
+&nbsp;&nbsp; ✦ &nbsp;&nbsp;
+<code>HACKATHON PROJECTS</code>
+
+<br><br>
+
+<b>Turning ideas into useful digital experiences.</b>
+
+</div>
+
+<br><br>
+
+<h2 align="center">
+  🛠️ TECHNOLOGY
+</h2>
+
+<div align="center">
+
+<br>
+
+<img
+  src="https://img.shields.io/badge/Java-020617?style=for-the-badge&logo=openjdk&logoColor=ffffff&color=ef233c"
+  alt="Java"
+/>
+
+<img
+  src="https://img.shields.io/badge/C-020617?style=for-the-badge&logo=c&logoColor=ffffff&color=ef233c"
+  alt="C"
+/>
+
+<img
+  src="https://img.shields.io/badge/Python-020617?style=for-the-badge&logo=python&logoColor=ffffff&color=ef233c"
+  alt="Python"
+/>
+
+<img
+  src="https://img.shields.io/badge/JavaScript-020617?style=for-the-badge&
