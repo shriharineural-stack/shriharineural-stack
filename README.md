@@ -1,117 +1,63 @@
-<div align="center">
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1600"
+     height="500"
+     viewBox="0 0 1600 500">
 
-<img
-  src="./assets/neon-banner.svg"
-  width="100%"
-  alt="SHRI HARI Software Developer"
-/>
+  <defs>
 
-</div>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020204"/>
+      <stop offset="55%" stop-color="#09090d"/>
+      <stop offset="100%" stop-color="#210308"/>
+    </linearGradient>
 
-<br>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#65000e"/>
+      <stop offset="50%" stop-color="#ff1744"/>
+      <stop offset="100%" stop-color="#65000e"/>
+    </linearGradient>
 
-<h2 align="center">
-  👨‍💻 ABOUT ME
-</h2>
+    <radialGradient id="glow">
+      <stop offset="0%" stop-color="#ff1744" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ff1744" stop-opacity="0"/>
+    </radialGradient>
 
-<div align="center">
+    <pattern id="grid"
+             width="50"
+             height="50"
+             patternUnits="userSpaceOnUse">
 
-<img
-  src="./assets/about-developer.svg"
-  width="100%"
-  alt="About Shri Hari"
-/>
+      <path d="M50 0H0V50"
+            fill="none"
+            stroke="#ff1744"
+            stroke-opacity="0.08"/>
 
-<br><br>
+    </pattern>
 
-<b>AI&DS Student • Software Developer • Web • App • AI</b>
+  </defs>
 
-<br><br>
+  <!-- BACKGROUND -->
+  <rect width="1600" height="500" fill="url(#bg)"/>
 
-<img src="https://img.shields.io/badge/🧠%20AI%20%26%20DATA%20SCIENCE-020617?style=for-the-badge&labelColor=020617&color=ef233c">
+  <!-- GRID -->
+  <rect width="1600" height="500" fill="url(#grid)"/>
 
-<img src="https://img.shields.io/badge/💻%20PROGRAMMING-020617?style=for-the-badge&labelColor=020617&color=ef233c">
+  <!-- CENTER GLOW -->
+  <ellipse
+    cx="800"
+    cy="250"
+    rx="650"
+    ry="230"
+    fill="url(#glow)"
+  />
 
-<img src="https://img.shields.io/badge/🌐%20WEB%20%26%20APP-020617?style=for-the-badge&labelColor=020617&color=ef233c">
+  <!-- TOP NEON LINE -->
+  <rect
+    x="100"
+    y="35"
+    width="1400"
+    height="2"
+    fill="url(#red)"
+  />
 
-<img src="https://img.shields.io/badge/🚀%20BUILDING-020617?style=for-the-badge&labelColor=020617&color=ef233c">
-
-<br><br>
-
-<code>Java</code>
-&nbsp;•&nbsp;
-<code>C</code>
-&nbsp;•&nbsp;
-<code>Python</code>
-&nbsp;•&nbsp;
-<code>Angular</code>
-&nbsp;•&nbsp;
-<code>JavaScript</code>
-&nbsp;•&nbsp;
-<code>AI</code>
-
-<br><br>
-
-<b>✦ A BETTER TOMORROW IS BUILT BY CODE ✦</b>
-
-<br><br>
-
-<code>BUILD • CREATE • INNOVATE</code>
-
-</div>
-<h2 align="center">📊 GITHUB STATS</h2>
-
-<div align="center">
-
-<img
-  src="https://github-readme-stats.vercel.app/api?username=shriharineural-stack&show_icons=true&hide_border=true&bg_color=020617&title_color=ff465d&icon_color=ff465d&text_color=f8fafc&ring_color=ff465d"
-  width="49%"
-  alt="GitHub Stats"
-/>
-
-<img
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=shriharineural-stack&layout=compact&hide_border=true&bg_color=020617&title_color=ff465d&text_color=f8fafc"
-  width="49%"
-  alt="Top Languages"
-/>
-
-<br><br>
-
-<img
-  src="https://github-readme-streak-stats.herokuapp.com/?user=shriharineural-stack&hide_border=true&background=020617&ring=ff465d&fire=ff465d&currStreakLabel=ff465d&sideLabels=f8fafc&currStreakNum=ffffff&sideNums=ffffff&dates=94a3b8"
-  width="70%"
-  alt="GitHub Contribution Streak"
-/>
-
-</div>
-<h2 align="center">🌐 CONNECT WITH ME</h2>
-
-<div align="center">
-
-<br>
-
-<a href="https://github.com/shriharineural-stack">
-<img
-src="https://img.shields.io/badge/GITHUB-020617?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=ef233c"
-alt="GitHub"
-/>
-</a>
-
-&nbsp;
-
-<a href="mailto:shrihari.neural@gmail.com">
-<img
-src="https://img.shields.io/badge/EMAIL-020617?style=for-the-badge&logo=gmail&logoColor=ffffff&labelColor=ef233c"
-alt="Email"
-/>
-</a>
-
-<br><br>
-
-<code>OPEN TO • COLLABORATION • PROJECTS • LEARNING</code>
-
-<br><br>
-
-<b>✦ LET'S BUILD SOMETHING GREAT ✦</b>
-
-</div></div>
+  <!-- B
