@@ -10,17 +10,31 @@
 
 <br>
 
+<h2 align="center">
+  👨‍💻 ABOUT ME
+</h2>
+
 <div align="center">
 
-<br>
+<img
+  src="./assets/about-developer.svg"
+  width="100%"
+  alt="About Shri Hari"
+/>
 
-<img src="https://img.shields.io/badge/AI_%26_DATA_SCIENCE-020617?style=for-the-badge&logo=python&logoColor=ff465d&labelColor=020617">
+<br><br>
 
-<img src="https://img.shields.io/badge/PROGRAMMING-020617?style=for-the-badge&logo=java&logoColor=ff465d&labelColor=020617">
+<b>AI&DS Student • Software Developer • Web • App • AI</b>
 
-<img src="https://img.shields.io/badge/WEB_%26_APP-020617?style=for-the-badge&logo=angular&logoColor=ff465d&labelColor=020617">
+<br><br>
 
-<img src="https://img.shields.io/badge/BUILDING-020617?style=for-the-badge&logo=rocket&logoColor=ff465d&labelColor=020617">
+<img src="https://img.shields.io/badge/🧠%20AI%20%26%20DATA%20SCIENCE-020617?style=for-the-badge&labelColor=020617&color=ef233c">
+
+<img src="https://img.shields.io/badge/💻%20PROGRAMMING-020617?style=for-the-badge&labelColor=020617&color=ef233c">
+
+<img src="https://img.shields.io/badge/🌐%20WEB%20%26%20APP-020617?style=for-the-badge&labelColor=020617&color=ef233c">
+
+<img src="https://img.shields.io/badge/🚀%20BUILDING-020617?style=for-the-badge&labelColor=020617&color=ef233c">
 
 <br><br>
 
@@ -36,30 +50,12 @@
 &nbsp;•&nbsp;
 <code>AI</code>
 
-</div>
-
-<br>
-
-<div align="center">
+<br><br>
 
 <b>✦ A BETTER TOMORROW IS BUILT BY CODE ✦</b>
 
 <br><br>
 
 <code>BUILD • CREATE • INNOVATE</code>
-
-</div>**AI&DS Student • Software Developer • Web • App • AI**
-
-<br><br>
-
-| 🧠 | 💻 | 🌐 | 🚀 |
-|---|---|---|---|
-| **AI & DS** | **Programming** | **Web & App** | **Building** |
-| Exploring AI | Java • C • Python | Modern Applications | Real-world Projects |
-
-</div>
-### ✦ A BETTER TOMORROW IS BUILT BY CODE ✦
-
-`BUILD • CREATE • INNOVATE`
 
 </div>
