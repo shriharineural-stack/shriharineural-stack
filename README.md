@@ -59,3 +59,28 @@
 <code>BUILD • CREATE • INNOVATE</code>
 
 </div>
+<h2 align="center">📊 GITHUB STATS</h2>
+
+<div align="center">
+
+<img
+  src="https://github-readme-stats.vercel.app/api?username=shriharineural-stack&show_icons=true&hide_border=true&bg_color=020617&title_color=ff465d&icon_color=ff465d&text_color=f8fafc&ring_color=ff465d"
+  width="49%"
+  alt="GitHub Stats"
+/>
+
+<img
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=shriharineural-stack&layout=compact&hide_border=true&bg_color=020617&title_color=ff465d&text_color=f8fafc"
+  width="49%"
+  alt="Top Languages"
+/>
+
+<br><br>
+
+<img
+  src="https://github-readme-streak-stats.herokuapp.com/?user=shriharineural-stack&hide_border=true&background=020617&ring=ff465d&fire=ff465d&currStreakLabel=ff465d&sideLabels=f8fafc&currStreakNum=ffffff&sideNums=ffffff&dates=94a3b8"
+  width="70%"
+  alt="GitHub Contribution Streak"
+/>
+
+</div>
