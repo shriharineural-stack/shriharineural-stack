@@ -5,19 +5,19 @@
 
   <defs>
 
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#020204"/>
-      <stop offset="55%" stop-color="#09090d"/>
-      <stop offset="100%" stop-color="#210308"/>
+      <stop offset="55%" stop-color="#08080c"/>
+      <stop offset="100%" stop-color="#200309"/>
     </linearGradient>
 
     <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#65000e"/>
+      <stop offset="0%" stop-color="#700014"/>
       <stop offset="50%" stop-color="#ff1744"/>
-      <stop offset="100%" stop-color="#65000e"/>
+      <stop offset="100%" stop-color="#700014"/>
     </linearGradient>
 
-    <radialGradient id="glow">
+    <radialGradient id="centerGlow">
       <stop offset="0%" stop-color="#ff1744" stop-opacity="0.22"/>
       <stop offset="100%" stop-color="#ff1744" stop-opacity="0"/>
     </radialGradient>
@@ -30,28 +30,28 @@
       <path d="M50 0H0V50"
             fill="none"
             stroke="#ff1744"
-            stroke-opacity="0.08"/>
+            stroke-opacity="0.07"/>
 
     </pattern>
 
   </defs>
 
-  <!-- BACKGROUND -->
-  <rect width="1600" height="500" fill="url(#bg)"/>
+  <!-- Background -->
+  <rect width="1600" height="500" fill="url(#background)"/>
 
-  <!-- GRID -->
+  <!-- Tech Grid -->
   <rect width="1600" height="500" fill="url(#grid)"/>
 
-  <!-- CENTER GLOW -->
+  <!-- Center Glow -->
   <ellipse
     cx="800"
     cy="250"
     rx="650"
     ry="230"
-    fill="url(#glow)"
+    fill="url(#centerGlow)"
   />
 
-  <!-- TOP NEON LINE -->
+  <!-- Top Line -->
   <rect
     x="100"
     y="35"
@@ -60,4 +60,14 @@
     fill="url(#red)"
   />
 
-  <!-- B
+  <!-- Bottom Line -->
+  <rect
+    x="100"
+    y="463"
+    width="1400"
+    height="2"
+    fill="url(#red)"
+  />
+
+  <!-- Left Circuit -->
+  <g
