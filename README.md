@@ -1,86 +1,37 @@
-## Hi there 👋
+<!-- Red Neon Gradient for Text -->
+<linearGradient id="red-glow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+  <stop offset="0%" stop-color="#ff4458" />
+  <stop offset="40%" stop-color="#ff1a35" />
+  <stop offset="70%" stop-color="#ffffff" />
+  <stop offset="100%" stop-color="#ff2a45" />
+  <animate attributeName="x1" from="-100%" to="100%" dur="7s" repeatCount="indefinite" />
+  <animate attributeName="x2" from="0%" to="200%" dur="7s" repeatCount="indefinite" />
+</linearGradient>
 
-<!--
-**shriharineural-stack/shriharineural-stack** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!-- Border Glow Gradient -->
+<linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+  <stop offset="0%" stop-color="#7f1d1d" />
+  <stop offset="30%" stop-color="#ef4444" />
+  <stop offset="50%" stop-color="#ff4d6d" />
+  <stop offset="70%" stop-color="#ef4444" />
+  <stop offset="100%" stop-color="#7f1d1d" />
+</linearGradient>
 
-Here are some ideas to get you started:
+<!-- Filters for Neon Glow -->
+<filter id="glow-red" x="-20%" y="-20%" width="140%" height="140%">
+  <feGaussianBlur stdDeviation="8" result="blur" />
+  <feMerge>
+    <feMergeNode in="blur" />
+    <feMergeNode in="blur" />
+    <feMergeNode in="SourceGraphic" />
+  </feMerge>
+</filter>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-<div align="center">
+<filter id="ambient-blur">
+  <feGaussianBlur stdDeviation="40" />
+</filter>
 
-<img src="./assets/neon-banner.png" width="100%" alt="SHRI HARI Software Developer"/>
-
-</div>
-
----
-
-<div align="center">
-
-<img src="./assets/shri-hari-portfolio.png" width="100%" alt="SHRI HARI Portfolio"/>
-
-</div>
-
----
-
-## 👨‍💻 About Me
-
-<img src="./assets/about-developer.png" width="100%" alt="About Shri Hari"/>
-
-I'm an **AI&DS student and software developer** interested in building practical applications, exploring AI, and creating modern web and mobile experiences.
-
-- 🎓 AI&DS Student
-- 💻 Java • C • Python
-- 🌐 Web & App Development
-- 🧠 AI & Intelligent Systems
-- 🚀 Building projects and learning every day
-
----
-
-## 🧠 Tech Stack
-
-<img src="./assets/tech-stack.png" width="100%" alt="Technology Stack"/>
-
----
-
-## 🚀 Featured Projects
-
-<img src="./assets/projects-banner.png" width="100%" alt="Featured Projects"/>
-
-### 🔥 Industrial Fire Intelligence
-Satellite-powered fire monitoring and intelligent risk analysis using NASA FIRMS, FastAPI, Angular and Leaflet.
-
-### 📱 AI Mobile Assistant
-A smart Android assistant concept combining AI interaction, voice control and intelligent automation.
-
-### 🌐 Web Applications
-Modern responsive applications focused on usability, clean UI and performance.
-
----
-
-## 🌐 Connect With Me
-
-<img src="./assets/connect-background.png" width="100%" alt="Connect With Me"/>
-
-<div align="center">
-
-**GitHub:** [shriharineural-stack](https://github.com/shriharineural-stack)
-
-</div>
-
----
-
-<div align="center">
-
-> **✦ A better tomorrow is built by code. ✦**
-
-`KEEP BUILDING • KEEP LEARNING • KEEP GROWING`
-
-</div>
+<!-- Grid Pattern -->
+<pattern id="tech-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+  <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#ef4444" stroke-width="0.75" stroke-opacity="0.08" />
+</pattern>
