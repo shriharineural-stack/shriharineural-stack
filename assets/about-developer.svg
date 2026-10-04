@@ -1,62 +1,241 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700">
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1600"
+     height="650"
+     viewBox="0 0 1600 650">
 
-<rect width="1600" height="700" fill="#020617"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020204"/>
+      <stop offset="55%" stop-color="#090b14"/>
+      <stop offset="100%" stop-color="#160308"/>
+    </linearGradient>
 
-<rect x="20" y="20" width="1560" height="660"
-      rx="25"
-      fill="#080b14"
-      stroke="#ef4444"
-      stroke-width="3"/>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff003c"/>
+      <stop offset="50%" stop-color="#ff174f"/>
+      <stop offset="100%" stop-color="#ff0048"/>
+    </linearGradient>
 
-<rect x="45" y="45" width="1510" height="610"
-      rx="20"
-      fill="none"
-      stroke="#ef4444"
-      stroke-width="1"
-      opacity="0.4"/>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
-<!-- LEFT TERMINAL -->
+    <filter id="smallGlow">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
 
-<rect x="90" y="120"
-      width="650"
-      height="460"
-      rx="18"
-      fill="#03050b"
-      stroke="#ef4444"
-      stroke-width="2"/>
+    <pattern id="grid"
+             width="45"
+             height="45"
+             patternUnits="userSpaceOnUse">
+      <path d="M 45 0 L 0 0 0 45"
+            fill="none"
+            stroke="#ff003c"
+            stroke-opacity="0.08"
+            stroke-width="1"/>
+    </pattern>
+  </defs>
 
-<circle cx="130" cy="160" r="7" fill="#ef4444"/>
-<circle cx="155" cy="160" r="7" fill="#ff465d"/>
-<circle cx="180" cy="160" r="7" fill="#ff7180"/>
+  <!-- BACKGROUND -->
+  <rect width="1600" height="650" fill="url(#bg)"/>
+  <rect width="1600" height="650" fill="url(#grid)"/>
 
-<text x="220" y="167"
-      font-family="monospace"
-      font-size="18"
-      fill="#94a3b8">
-developer_terminal
-</text>
+  <!-- RED AMBIENT GLOW -->
+  <ellipse cx="1250" cy="300"
+           rx="300"
+           ry="250"
+           fill="#ff003c"
+           opacity="0.08"
+           filter="url(#smallGlow)"/>
 
-<line x1="90" y1="200"
-      x2="740" y2="200"
-      stroke="#ef4444"
-      stroke-width="1"
-      opacity="0.6"/>
+  <!-- OUTER FRAME -->
+  <rect x="18"
+        y="18"
+        width="1564"
+        height="614"
+        rx="28"
+        fill="none"
+        stroke="#ff003c"
+        stroke-width="3"
+        opacity="0.8"
+        filter="url(#glow)"/>
 
-<text x="125" y="270"
-      font-family="monospace"
-      font-size="24"
-      fill="#ff1744">
-&gt; developer.init()
-</text>
+  <rect x="35"
+        y="35"
+        width="1530"
+        height="580"
+        rx="20"
+        fill="none"
+        stroke="#ff174f"
+        stroke-opacity="0.3"
+        stroke-width="1"/>
 
-<text x="125" y="325"
-      font-family="monospace"
-      font-size="20"
-      fill="#94a3b8">
-name:
-</text>
+  <!-- LEFT TERMINAL PANEL -->
+  <rect x="90"
+        y="105"
+        width="760"
+        height="400"
+        rx="18"
+        fill="#05070d"
+        stroke="#ff003c"
+        stroke-opacity="0.55"
+        stroke-width="2"/>
 
-<text x="270" y="325"
-      font-family="monospace"
-      font-size="20"
-     
+  <!-- TERMINAL HEADER -->
+  <circle cx="125" cy="140" r="7" fill="#ff003c"/>
+  <circle cx="150" cy="140" r="7" fill="#ff4d70"/>
+  <circle cx="175" cy="140" r="7" fill="#8b001f"/>
+
+  <line x1="110"
+        y1="165"
+        x2="830"
+        y2="165"
+        stroke="#ff003c"
+        stroke-opacity="0.25"/>
+
+  <!-- TERMINAL TEXT -->
+  <text x="125"
+        y="215"
+        fill="#ff174f"
+        font-family="monospace"
+        font-size="24">
+    &gt; developer_profile
+  </text>
+
+  <text x="125"
+        y="260"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="38"
+        font-weight="bold">
+    SHRI HARI
+  </text>
+
+  <text x="125"
+        y="305"
+        fill="#ff4d70"
+        font-family="monospace"
+        font-size="22">
+    AI &amp; DATA SCIENCE
+  </text>
+
+  <text x="125"
+        y="350"
+        fill="#b8bec9"
+        font-family="monospace"
+        font-size="19">
+    &gt; software_developer
+  </text>
+
+  <text x="125"
+        y="385"
+        fill="#b8bec9"
+        font-family="monospace"
+        font-size="19">
+    &gt; web_app_builder
+  </text>
+
+  <text x="125"
+        y="420"
+        fill="#b8bec9"
+        font-family="monospace"
+        font-size="19">
+    &gt; ai_ml_explorer
+  </text>
+
+  <text x="125"
+        y="470"
+        fill="#ff003c"
+        font-family="monospace"
+        font-size="18">
+    &gt; building_the_future_
+  </text>
+
+  <!-- AI CORE -->
+  <circle cx="1230"
+          cy="300"
+          r="175"
+          fill="none"
+          stroke="#ff003c"
+          stroke-opacity="0.25"
+          stroke-width="2"/>
+
+  <circle cx="1230"
+          cy="300"
+          r="135"
+          fill="none"
+          stroke="#ff174f"
+          stroke-opacity="0.45"
+          stroke-width="3"
+          filter="url(#glow)"/>
+
+  <circle cx="1230"
+          cy="300"
+          r="75"
+          fill="#10030a"
+          stroke="#ff003c"
+          stroke-width="3"
+          filter="url(#glow)"/>
+
+  <!-- BRAIN / AI NODES -->
+  <path d="M1185 275
+           C1160 235 1195 205 1230 225
+           C1265 205 1300 235 1275 275
+           C1300 315 1265 350 1230 330
+           C1195 350 1160 315 1185 275"
+        fill="none"
+        stroke="#ff174f"
+        stroke-width="5"
+        filter="url(#glow)"/>
+
+  <path d="M1230 225 L1230 330"
+        stroke="#ff174f"
+        stroke-width="4"/>
+
+  <path d="M1185 275 L1275 275"
+        stroke="#ff174f"
+        stroke-width="4"/>
+
+  <!-- CIRCUIT LINES -->
+  <path d="M1145 245 L1070 190 L1010 190"
+        fill="none"
+        stroke="#ff003c"
+        stroke-width="3"/>
+
+  <path d="M1315 245 L1390 190 L1450 190"
+        fill="none"
+        stroke="#ff003c"
+        stroke-width="3"/>
+
+  <path d="M1145 355 L1070 410 L1010 410"
+        fill="none"
+        stroke="#ff003c"
+        stroke-width="3"/>
+
+  <path d="M1315 355 L1390 410 L1450 410"
+        fill="none"
+        stroke="#ff003c"
+        stroke-width="3"/>
+
+  <!-- CIRCUIT NODES -->
+  <circle cx="1010" cy="190" r="7" fill="#ff003c" filter="url(#glow)"/>
+  <circle cx="1450" cy="190" r="7" fill="#ff003c" filter="url(#glow)"/>
+  <circle cx="1010" cy="410" r="7" fill="#ff003c" filter="url(#glow)"/>
+  <circle cx="1450" cy="410" r="7" fill="#ff003c" filter="url(#glow)"/>
+
+  <!-- TITLE -->
+  <text x="800"
+        y="565"
+        text-anchor="middle"
+        fill="#ffffff"
+        font-family="monospace"
+        font-size="25"
+        letter-spacing="6">
+    AI • CODE • INNOVATION
+  </text>
+
+</svg>
