@@ -74,7 +74,7 @@ Tech: React • TypeScript • Node.js • PostgreSQL • Python AI/OCR
 
 3. AI Spam Detection System
 
-A Python-based AI/ML project concept for identifying and classifying spam messages.
+A Python-based AI/ML project for identifying and classifying spam messages.
 
 Focus: Python • Machine Learning • Text Classification
 
@@ -92,7 +92,7 @@ Focus: Python • Machine Learning • Text Classification
 📈 Contribution Activity
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=shriharineural-stack&theme=tokyo-night&hide_border=true" width="100%" alt="GitHub Contribution Activity"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=shriharineural-stack&theme=tokyo-night" width="100%" alt="GitHub Contribution Activity"/>
 </p>---
 
 🌱 Currently Exploring
@@ -117,14 +117,12 @@ I believe consistency, curiosity, and hands-on projects are the keys to becoming
 🤝 LET'S CONNECT
 
 <p align="center">
-  <img
-    src="https://raw.githubusercontent.com/shriharineural-stack/shriharineural-stack/main/assets/connect-background.png"
-    alt="SHRI HARI - LET'S CONNECT"
-    width="100%"
-  />
+  <b>BUILD • CREATE • INNOVATE</b>
+</p><p align="center">
+  <img src="https://img.shields.io/badge/SHRI%20HARI-SOFTWARE%20DEVELOPER-0077ff?style=for-the-badge&labelColor=0b1020" alt="Shri Hari Software Developer"/>
 </p><p align="center">
   <a href="https://github.com/shriharineural-stack">
-    <img src="https://img.shields.io/badge/GitHub-Follow%20My%20Journey-0d1117?style=for-the-badge&logo=github&logoColor=00d4ff" alt="Follow on GitHub"/>
+    <img src="https://img.shields.io/badge/GitHub-Follow%20My%20Journey-181717?style=for-the-badge&logo=github&logoColor=00d4ff" alt="Follow on GitHub"/>
   </a>
 </p><p align="center">
   <img src="https://komarev.com/ghpvc/?username=shriharineural-stack&style=for-the-badge&color=0077ff" alt="Profile Views"/>
