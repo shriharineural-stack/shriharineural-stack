@@ -1,22 +1,28 @@
+
 <svg xmlns="http://www.w3.org/2000/svg"
      width="1600"
      height="650"
      viewBox="0 0 1600 650">
 
   <defs>
+    <!-- DARK BLUE BACKGROUND -->
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#020204"/>
+      <stop offset="0%" stop-color="#02040a"/>
       <stop offset="55%" stop-color="#090b14"/>
-      <stop offset="100%" stop-color="#160308"/>
+      <stop offset="100%" stop-color="#020d20"/>
     </linearGradient>
 
-    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#ff003c"/>
-      <stop offset="50%" stop-color="#ff174f"/>
-      <stop offset="100%" stop-color="#ff0048"/>
+    <!-- ELECTRIC BLUE GRADIENT -->
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0080ff"/>
+      <stop offset="50%" stop-color="#00c8ff"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
     </linearGradient>
 
-    <filter id="glow">
+    <!-- NEON GLOW -->
+    <filter id="glow"
+            x="-50%" y="-50%"
+            width="200%" height="200%">
       <feGaussianBlur stdDeviation="8" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
@@ -24,18 +30,21 @@
       </feMerge>
     </filter>
 
-    <filter id="smallGlow">
+    <filter id="smallGlow"
+            x="-50%" y="-50%"
+            width="200%" height="200%">
       <feGaussianBlur stdDeviation="3"/>
     </filter>
 
+    <!-- TECH GRID -->
     <pattern id="grid"
              width="45"
              height="45"
              patternUnits="userSpaceOnUse">
       <path d="M 45 0 L 0 0 0 45"
             fill="none"
-            stroke="#ff003c"
-            stroke-opacity="0.08"
+            stroke="#0080ff"
+            stroke-opacity="0.09"
             stroke-width="1"/>
     </pattern>
   </defs>
@@ -44,70 +53,67 @@
   <rect width="1600" height="650" fill="url(#bg)"/>
   <rect width="1600" height="650" fill="url(#grid)"/>
 
-  <!-- RED AMBIENT GLOW -->
+  <!-- BLUE AMBIENT GLOW -->
   <ellipse cx="1250" cy="300"
-           rx="300"
-           ry="250"
-           fill="#ff003c"
-           opacity="0.08"
+           rx="300" ry="250"
+           fill="#0080ff"
+           opacity="0.09"
+           filter="url(#smallGlow)"/>
+
+  <ellipse cx="1220" cy="300"
+           rx="200" ry="180"
+           fill="#00c8ff"
+           opacity="0.04"
            filter="url(#smallGlow)"/>
 
   <!-- OUTER FRAME -->
-  <rect x="18"
-        y="18"
-        width="1564"
-        height="614"
+  <rect x="18" y="18"
+        width="1564" height="614"
         rx="28"
         fill="none"
-        stroke="#ff003c"
+        stroke="#0080ff"
         stroke-width="3"
-        opacity="0.8"
+        opacity="0.85"
         filter="url(#glow)"/>
 
-  <rect x="35"
-        y="35"
-        width="1530"
-        height="580"
+  <!-- INNER FRAME -->
+  <rect x="35" y="35"
+        width="1530" height="580"
         rx="20"
         fill="none"
-        stroke="#ff174f"
-        stroke-opacity="0.3"
+        stroke="#38bdf8"
+        stroke-opacity="0.35"
         stroke-width="1"/>
 
   <!-- LEFT TERMINAL PANEL -->
-  <rect x="90"
-        y="105"
-        width="760"
-        height="400"
+  <rect x="90" y="105"
+        width="760" height="400"
         rx="18"
-        fill="#05070d"
-        stroke="#ff003c"
-        stroke-opacity="0.55"
+        fill="#050914"
+        stroke="#0080ff"
+        stroke-opacity="0.65"
         stroke-width="2"/>
 
   <!-- TERMINAL HEADER -->
-  <circle cx="125" cy="140" r="7" fill="#ff003c"/>
-  <circle cx="150" cy="140" r="7" fill="#ff4d70"/>
-  <circle cx="175" cy="140" r="7" fill="#8b001f"/>
+  <circle cx="125" cy="140" r="7" fill="#0080ff"/>
+  <circle cx="150" cy="140" r="7" fill="#38bdf8"/>
+  <circle cx="175" cy="140" r="7" fill="#075985"/>
 
-  <line x1="110"
-        y1="165"
-        x2="830"
-        y2="165"
-        stroke="#ff003c"
-        stroke-opacity="0.25"/>
+  <line x1="110" y1="165"
+        x2="830" y2="165"
+        stroke="#0080ff"
+        stroke-opacity="0.35"/>
 
   <!-- TERMINAL TEXT -->
-  <text x="125"
-        y="215"
-        fill="#ff174f"
+  <text x="125" y="215"
+        fill="#38bdf8"
         font-family="monospace"
         font-size="24">
     &gt; developer_profile
   </text>
 
-  <text x="125"
-        y="260"
+  <!-- DEVELOPER NAME -->
+  <text x="125" y="260"
         fill="#ffffff"
         font-family="monospace"
         font-size="38"
@@ -115,121 +121,133 @@
     SHRI HARI
   </text>
 
-  <text x="125"
-        y="305"
-        fill="#ff4d70"
+  <!-- DEPARTMENT -->
+  <text x="125" y="305"
+        fill="#00c8ff"
         font-family="monospace"
         font-size="22">
     AI &amp; DATA SCIENCE
   </text>
 
-  <text x="125"
-        y="350"
-        fill="#b8bec9"
+  <!-- SKILLS -->
+  <text x="125" y="350"
+        fill="#b8c7dc"
         font-family="monospace"
         font-size="19">
     &gt; software_developer
   </text>
 
-  <text x="125"
-        y="385"
-        fill="#b8bec9"
+  <text x="125" y="385"
+        fill="#b8c7dc"
         font-family="monospace"
         font-size="19">
     &gt; web_app_builder
   </text>
 
-  <text x="125"
-        y="420"
-        fill="#b8bec9"
+  <text x="125" y="420"
+        fill="#b8c7dc"
         font-family="monospace"
         font-size="19">
     &gt; ai_ml_explorer
   </text>
 
-  <text x="125"
-        y="470"
-        fill="#ff003c"
+  <!-- TERMINAL FOOTER -->
+  <text x="125" y="470"
+        fill="#38bdf8"
         font-family="monospace"
         font-size="18">
     &gt; building_the_future_
   </text>
 
-  <!-- AI CORE -->
-  <circle cx="1230"
-          cy="300"
+  <!-- AI CORE OUTER RING -->
+  <circle cx="1230" cy="300"
           r="175"
           fill="none"
-          stroke="#ff003c"
-          stroke-opacity="0.25"
+          stroke="#0080ff"
+          stroke-opacity="0.35"
           stroke-width="2"/>
 
-  <circle cx="1230"
-          cy="300"
+  <!-- AI CORE MIDDLE RING -->
+  <circle cx="1230" cy="300"
           r="135"
           fill="none"
-          stroke="#ff174f"
-          stroke-opacity="0.45"
+          stroke="#00c8ff"
+          stroke-opacity="0.7"
           stroke-width="3"
           filter="url(#glow)"/>
 
-  <circle cx="1230"
-          cy="300"
+  <!-- AI CORE INNER CIRCLE -->
+  <circle cx="1230" cy="300"
           r="75"
-          fill="#10030a"
-          stroke="#ff003c"
+          fill="#061326"
+          stroke="#0080ff"
           stroke-width="3"
           filter="url(#glow)"/>
 
-  <!-- BRAIN / AI NODES -->
+  <!-- AI BRAIN SYMBOL -->
   <path d="M1185 275
            C1160 235 1195 205 1230 225
            C1265 205 1300 235 1275 275
            C1300 315 1265 350 1230 330
            C1195 350 1160 315 1185 275"
         fill="none"
-        stroke="#ff174f"
+        stroke="#38bdf8"
         stroke-width="5"
         filter="url(#glow)"/>
 
+  <!-- AI CONNECTIONS -->
   <path d="M1230 225 L1230 330"
-        stroke="#ff174f"
+        fill="none"
+        stroke="#00c8ff"
         stroke-width="4"/>
 
   <path d="M1185 275 L1275 275"
-        stroke="#ff174f"
+        fill="none"
+        stroke="#00c8ff"
         stroke-width="4"/>
 
   <!-- CIRCUIT LINES -->
   <path d="M1145 245 L1070 190 L1010 190"
         fill="none"
-        stroke="#ff003c"
+        stroke="#0080ff"
         stroke-width="3"/>
 
   <path d="M1315 245 L1390 190 L1450 190"
         fill="none"
-        stroke="#ff003c"
+        stroke="#0080ff"
         stroke-width="3"/>
 
   <path d="M1145 355 L1070 410 L1010 410"
         fill="none"
-        stroke="#ff003c"
+        stroke="#0080ff"
         stroke-width="3"/>
 
   <path d="M1315 355 L1390 410 L1450 410"
         fill="none"
-        stroke="#ff003c"
+        stroke="#0080ff"
         stroke-width="3"/>
 
   <!-- CIRCUIT NODES -->
-  <circle cx="1010" cy="190" r="7" fill="#ff003c" filter="url(#glow)"/>
-  <circle cx="1450" cy="190" r="7" fill="#ff003c" filter="url(#glow)"/>
-  <circle cx="1010" cy="410" r="7" fill="#ff003c" filter="url(#glow)"/>
-  <circle cx="1450" cy="410" r="7" fill="#ff003c" filter="url(#glow)"/>
+  <circle cx="1010" cy="190" r="7"
+          fill="#00c8ff" filter="url(#glow)"/>
 
-  <!-- TITLE -->
-  <text x="800"
-        y="565"
+  <circle cx="1450" cy="190" r="7"
+          fill="#00c8ff" filter="url(#glow)"/>
+
+  <circle cx="1010" cy="410" r="7"
+          fill="#00c8ff" filter="url(#glow)"/>
+
+  <circle cx="1450" cy="410" r="7"
+          fill="#00c8ff" filter="url(#glow)"/>
+
+  <!-- DECORATIVE TECH DOTS -->
+  <circle cx="1080" cy="300" r="4" fill="#38bdf8"/>
+  <circle cx="1380" cy="300" r="4" fill="#38bdf8"/>
+  <circle cx="1230" cy="120" r="4" fill="#38bdf8"/>
+  <circle cx="1230" cy="480" r="4" fill="#38bdf8"/>
+
+  <!-- BOTTOM TITLE -->
+  <text x="800" y="565"
         text-anchor="middle"
         fill="#ffffff"
         font-family="monospace"
@@ -237,5 +255,12 @@
         letter-spacing="6">
     AI • CODE • INNOVATION
   </text>
+
+  <!-- BLUE UNDERLINE -->
+  <line x1="590" y1="590"
+        x2="1010" y2="590"
+        stroke="url(#blue)"
+        stroke-width="3"
+        filter="url(#glow)"/>
 
 </svg>
