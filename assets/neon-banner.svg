@@ -1,354 +1,250 @@
+
 <svg width="1600" height="500" viewBox="0 0 1600 500"
      xmlns="http://www.w3.org/2000/svg">
 
   <defs>
-
-    <!-- RED NEON TEXT GRADIENT -->
-    <linearGradient id="red-glow-grad"
+    <!-- BLUE NEON TEXT GRADIENT -->
+    <linearGradient id="blue-glow-grad"
                     x1="0%" y1="0%"
                     x2="100%" y2="0%">
 
-      <stop offset="0%" stop-color="#ff4458"/>
-      <stop offset="40%" stop-color="#ff1a35"/>
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="40%" stop-color="#0080ff"/>
       <stop offset="70%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#ff2a45"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
 
-      <animate
-        attributeName="x1"
-        from="-100%"
-        to="100%"
-        dur="7s"
-        repeatCount="indefinite"/>
+      <animate attributeName="x1"
+               from="-100%" to="100%"
+               dur="7s" repeatCount="indefinite"/>
 
-      <animate
-        attributeName="x2"
-        from="0%"
-        to="200%"
-        dur="7s"
-        repeatCount="indefinite"/>
-
+      <animate attributeName="x2"
+               from="0%" to="200%"
+               dur="7s" repeatCount="indefinite"/>
     </linearGradient>
 
-
-    <!-- BORDER GRADIENT -->
+    <!-- BLUE BORDER GRADIENT -->
     <linearGradient id="border-grad"
                     x1="0%" y1="0%"
                     x2="100%" y2="0%">
 
-      <stop offset="0%" stop-color="#7f1d1d"/>
-      <stop offset="30%" stop-color="#ef4444"/>
-      <stop offset="50%" stop-color="#ff4d6d"/>
-      <stop offset="70%" stop-color="#ef4444"/>
-      <stop offset="100%" stop-color="#7f1d1d"/>
+      <stop offset="0%" stop-color="#082f49"/>
+      <stop offset="30%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="70%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#082f49"/>
 
-      <animate
-        attributeName="x1"
-        from="-100%"
-        to="100%"
-        dur="5s"
-        repeatCount="indefinite"/>
+      <animate attributeName="x1"
+               from="-100%" to="100%"
+               dur="5s" repeatCount="indefinite"/>
 
-      <animate
-        attributeName="x2"
-        from="0%"
-        to="200%"
-        dur="5s"
-        repeatCount="indefinite"/>
-
+      <animate attributeName="x2"
+               from="0%" to="200%"
+               dur="5s" repeatCount="indefinite"/>
     </linearGradient>
 
+    <!-- BLUE NEON GLOW -->
+    <filter id="glow-blue"
+            x="-50%" y="-50%"
+            width="200%" height="200%">
 
-    <!-- RED NEON GLOW -->
-    <filter id="glow-red"
-            x="-50%"
-            y="-50%"
-            width="200%"
-            height="200%">
-
-      <feGaussianBlur
-        stdDeviation="8"
-        result="blur"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
 
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
-
     </filter>
-
 
     <!-- SOFT AMBIENT GLOW -->
     <filter id="ambient-blur"
-            x="-50%"
-            y="-50%"
-            width="200%"
-            height="200%">
+            x="-50%" y="-50%"
+            width="200%" height="200%">
 
       <feGaussianBlur stdDeviation="40"/>
-
     </filter>
-
 
     <!-- TECH GRID -->
     <pattern id="tech-grid"
-             width="30"
-             height="30"
+             width="30" height="30"
              patternUnits="userSpaceOnUse">
 
-      <path
-        d="M 30 0 L 0 0 0 30"
-        fill="none"
-        stroke="#ef4444"
-        stroke-width="0.75"
-        stroke-opacity="0.10"/>
-
+      <path d="M 30 0 L 0 0 0 30"
+            fill="none"
+            stroke="#0080ff"
+            stroke-width="0.75"
+            stroke-opacity="0.10"/>
     </pattern>
-
 
     <!-- DARK BACKGROUND -->
     <linearGradient id="background"
-                    x1="0%"
-                    y1="0%"
-                    x2="100%"
-                    y2="100%">
+                    x1="0%" y1="0%"
+                    x2="100%" y2="100%">
 
       <stop offset="0%" stop-color="#020617"/>
-      <stop offset="50%" stop-color="#0b0b16"/>
-      <stop offset="100%" stop-color="#16070b"/>
-
+      <stop offset="50%" stop-color="#050b18"/>
+      <stop offset="100%" stop-color="#020d1c"/>
     </linearGradient>
-
   </defs>
 
-
   <!-- BACKGROUND -->
-  <rect
-    width="1600"
-    height="500"
-    fill="url(#background)"/>
-
+  <rect width="1600" height="500"
+        fill="url(#background)"/>
 
   <!-- GRID -->
-  <rect
-    width="1600"
-    height="500"
-    fill="url(#tech-grid)"/>
+  <rect width="1600" height="500"
+        fill="url(#tech-grid)"/>
 
+  <!-- AMBIENT BLUE LIGHT -->
+  <ellipse cx="800" cy="250"
+           rx="600" ry="180"
+           fill="#0080ff"
+           opacity="0.10"
+           filter="url(#ambient-blur)"/>
 
-  <!-- AMBIENT RED LIGHT -->
-  <ellipse
-    cx="800"
-    cy="250"
-    rx="600"
-    ry="180"
-    fill="#ef4444"
-    opacity="0.10"
-    filter="url(#ambient-blur)"/>
+  <!-- LEFT BLUE GLOW -->
+  <ellipse cx="80" cy="250"
+           rx="180" ry="220"
+           fill="#00bfff"
+           opacity="0.08"
+           filter="url(#ambient-blur)"/>
 
-
-  <!-- SIDE RED GLOW -->
-  <ellipse
-    cx="80"
-    cy="250"
-    rx="180"
-    ry="220"
-    fill="#ef4444"
-    opacity="0.08"
-    filter="url(#ambient-blur)"/>
-
-
-  <ellipse
-    cx="1520"
-    cy="250"
-    rx="180"
-    ry="220"
-    fill="#ef4444"
-    opacity="0.08"
-    filter="url(#ambient-blur)"/>
-
+  <!-- RIGHT BLUE GLOW -->
+  <ellipse cx="1520" cy="250"
+           rx="180" ry="220"
+           fill="#0080ff"
+           opacity="0.08"
+           filter="url(#ambient-blur)"/>
 
   <!-- OUTER NEON BORDER -->
-  <rect
-    x="18"
-    y="18"
-    width="1564"
-    height="464"
-    rx="28"
-    fill="none"
-    stroke="url(#border-grad)"
-    stroke-width="2"
-    opacity="0.9"
-    filter="url(#glow-red)"/>
-
+  <rect x="18" y="18"
+        width="1564" height="464"
+        rx="28"
+        fill="none"
+        stroke="url(#border-grad)"
+        stroke-width="2"
+        opacity="0.9"
+        filter="url(#glow-blue)"/>
 
   <!-- INNER BORDER -->
-  <rect
-    x="35"
-    y="35"
-    width="1530"
-    height="430"
-    rx="22"
-    fill="none"
-    stroke="#ef4444"
-    stroke-width="1"
-    stroke-opacity="0.18"/>
-
+  <rect x="35" y="35"
+        width="1530" height="430"
+        rx="22"
+        fill="none"
+        stroke="#0080ff"
+        stroke-width="1"
+        stroke-opacity="0.25"/>
 
   <!-- TOP LABEL -->
-  <text
-    x="800"
-    y="125"
-    text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="22"
-    font-weight="bold"
-    letter-spacing="7"
-    fill="#ff7180">
+  <text x="800" y="125"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="22"
+        font-weight="bold"
+        letter-spacing="7"
+        fill="#7dd3fc">
 
     SOFTWARE DEVELOPER
-
   </text>
-
 
   <!-- MAIN NAME GLOW -->
-  <text
-    x="800"
-    y="235"
-    text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="92"
-    font-weight="900"
-    letter-spacing="8"
-    fill="url(#red-glow-grad)"
-    filter="url(#glow-red)">
+  <text x="800" y="235"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="92"
+        font-weight="900"
+        letter-spacing="8"
+        fill="url(#blue-glow-grad)"
+        filter="url(#glow-blue)">
 
     SHRI HARI
-
   </text>
-
 
   <!-- MAIN NAME CLEAN LAYER -->
-  <text
-    x="800"
-    y="235"
-    text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="92"
-    font-weight="900"
-    letter-spacing="8"
-    fill="url(#red-glow-grad)">
+  <text x="800" y="235"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="92"
+        font-weight="900"
+        letter-spacing="8"
+        fill="url(#blue-glow-grad)">
 
     SHRI HARI
-
   </text>
-
 
   <!-- SUBTITLE -->
-  <text
-    x="800"
-    y="295"
-    text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="21"
-    letter-spacing="5"
-    fill="#f8fafc">
+  <text x="800" y="295"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="21"
+        letter-spacing="5"
+        fill="#f8fafc">
 
     WEB  •  APP  •  SOFTWARE  •  AI
-
   </text>
-
 
   <!-- TERMINAL -->
-  <rect
-    x="540"
-    y="340"
-    width="520"
-    height="58"
-    rx="29"
-    fill="#080b14"
-    stroke="#ef4444"
-    stroke-opacity="0.5"/>
+  <rect x="540" y="340"
+        width="520" height="58"
+        rx="29"
+        fill="#050b18"
+        stroke="#0080ff"
+        stroke-opacity="0.6"/>
 
+  <circle cx="570" cy="369"
+          r="5"
+          fill="#00bfff"
+          filter="url(#glow-blue)"/>
 
-  <circle
-    cx="570"
-    cy="369"
-    r="5"
-    fill="#ef4444"
-    filter="url(#glow-red)"/>
-
-
-  <text
-    x="595"
-    y="377"
-    font-family="monospace"
-    font-size="18"
-    fill="#ff5368">
+  <text x="595" y="377"
+        font-family="monospace"
+        font-size="18"
+        fill="#38bdf8">
 
     &gt; building_the_future_
-
   </text>
 
-
   <!-- LEFT DECORATION -->
-  <g
-    stroke="#ef4444"
-    fill="none"
-    opacity="0.75">
+  <g stroke="#0080ff"
+     fill="none"
+     opacity="0.85">
 
-    <path
-      d="M80 120 L80 80 L120 80"
-      stroke-width="2"/>
+    <path d="M80 120 L80 80 L120 80"
+          stroke-width="2"/>
 
-    <path
-      d="M80 380 L80 420 L120 420"
-      stroke-width="2"/>
+    <path d="M80 380 L80 420 L120 420"
+          stroke-width="2"/>
 
-    <circle
-      cx="80"
-      cy="250"
-      r="5"
-      fill="#ef4444"/>
-
+    <circle cx="80" cy="250"
+            r="5"
+            fill="#00bfff"/>
   </g>
-
 
   <!-- RIGHT DECORATION -->
-  <g
-    stroke="#ef4444"
-    fill="none"
-    opacity="0.75">
+  <g stroke="#0080ff"
+     fill="none"
+     opacity="0.85">
 
-    <path
-      d="M1520 120 L1520 80 L1480 80"
-      stroke-width="2"/>
+    <path d="M1520 120 L1520 80 L1480 80"
+          stroke-width="2"/>
 
-    <path
-      d="M1520 380 L1520 420 L1480 420"
-      stroke-width="2"/>
+    <path d="M1520 380 L1520 420 L1480 420"
+          stroke-width="2"/>
 
-    <circle
-      cx="1520"
-      cy="250"
-      r="5"
-      fill="#ef4444"/>
-
+    <circle cx="1520" cy="250"
+            r="5"
+            fill="#00bfff"/>
   </g>
 
-
   <!-- BOTTOM TAG -->
-  <text
-    x="800"
-    y="445"
-    text-anchor="middle"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="15"
-    letter-spacing="4"
-    fill="#64748b">
+  <text x="800" y="445"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="15"
+        letter-spacing="4"
+        fill="#7dd3fc">
 
     &lt;/ BUILD • CREATE • INNOVATE &gt;
-
   </text>
 
 </svg>
