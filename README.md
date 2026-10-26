@@ -1,128 +1,127 @@
+SHRI HARI | AI & DS Developer
 
-<div align="center">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/shriharineural-stack/shriharineural-stack/main/assets/neon-banner.svg" width="100%" alt="Shri Hari Neon Banner"/>
+</p><p align="center">
+  <b>AI & Data Science Student | Software Developer | Tech Enthusiast</b>
+</p><p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=650&lines=Building+AI-Powered+Solutions;Learning+by+Building;Turning+Ideas+into+Projects;Build+%E2%80%A2+Create+%E2%80%A2+Innovate" alt="Typing SVG"/>
+</p><p align="center">
+  <a href="https://github.com/shriharineural-stack">
+    <img src="https://img.shields.io/badge/GitHub-shriharineural--stack-111827?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  <img src="https://img.shields.io/badge/Focus-Artificial%20Intelligence-0077ff?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Learning%20%26%20Building-00b894?style=for-the-badge"/>
+</p>---
 
-<img src="./assets/neon-banner.svg" width="100%" alt="Shri Hari Blue Neon Banner">
+👨‍💻 About Me
 
-<br>
+Hi! I'm Shri Hari, an AI & Data Science student passionate about software development, artificial intelligence, and solving real-world problems through technology.
 
-<img src="./assets/about-developer.svg" width="100%" alt="About Shri Hari">
+- 🎓 Studying B.Tech in Artificial Intelligence and Data Science
+- 🤖 Interested in AI, machine learning, and intelligent applications
+- 💻 Building practical projects and web applications
+- 🔍 Exploring computer vision, automation, and data-driven solutions
+- 🚀 Improving my development skills through hands-on projects
+- 🎯 Goal: Build useful, innovative, and impactful technology
 
-</div>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/shriharineural-stack/shriharineural-stack/main/assets/about-developer.svg" width="100%" alt="About the Developer"/>
+</p>---
 
-<br>
+🛠️ Tech Stack
 
-<h2 align="center">⚡ TECH STACK</h2>
+Languages
 
-<div align="center">
+<p>
+  <img src="https://skillicons.dev/icons?i=python,java,c,js,ts" alt="Programming Languages"/>
+</p>Web Development
 
-<img src="https://skillicons.dev/icons?i=python,java,c,cpp,html,css,js,typescript,angular,nodejs,fastapi,mysql,git,github,vscode&perline=8" alt="Tech Stack">
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,react,nodejs,express" alt="Web Development"/>
+</p>AI, Data & Tools
 
-</div>
+<p>
+  <img src="https://skillicons.dev/icons?i=tensorflow,opencv,mysql,postgres,git,github,vscode,figma" alt="AI and Developer Tools"/>
+</p>---
 
-<br>
+🚀 What I Build
 
-<h2 align="center">🚀 WHAT I BUILD</h2>
+Area| What I'm Exploring
+🤖 Artificial Intelligence| Intelligent applications and AI-powered automation
+👁️ Computer Vision| Image processing and document analysis
+🌐 Web Development| Interactive websites and full-stack applications
+📊 Data Science| Data analysis and data-driven problem solving
+🔐 Smart Systems| Verification, monitoring, and automation tools
 
-| 🔥 Area | 💡 Focus |
-|---|---|
-| 🤖 Artificial Intelligence | AI-powered applications and intelligent systems |
-| 🌐 Web Development | Modern full-stack web applications |
-| 📱 App Development | Practical, mobile-first solutions |
-| 🛰️ Data & APIs | Real-time data, APIs and automation |
-| 🎨 UI/UX | Futuristic and user-friendly interfaces |
+---
 
-<br>
+💡 Featured Projects
 
-<h2 align="center">💻 FEATURED PROJECTS</h2>
+🔥 Industrial Fire Intelligence System
 
-<div align="center">
+An intelligent fire-monitoring concept focused on identifying potential fire risks and presenting useful alerts and visual information.
 
-### 🔥 Industrial Fire Intelligence System
+Focus: AI • Monitoring • Dashboards • Data Visualization
 
-Satellite-powered industrial fire monitoring using **NASA FIRMS and OpenStreetMap**, with fire-risk analysis and location-based visualization.
+📄 CertiTrack
 
-**Tech:** `Python` `FastAPI` `Angular` `Leaflet` `NASA FIRMS` `OpenStreetMap`
+A citizen-centric certificate application and tracking portal concept designed to make certificate applications easier to monitor.
 
-<br>
+Focus: Full-Stack Development • Document Verification • Application Tracking • Admin Dashboard
 
-### 🪪 CertiTrack — Certificate Tracking Portal
+🤖 AI Spam Detection System
 
-A citizen-focused certificate application and tracking platform featuring application status monitoring, document verification and digital certificate access.
+A machine-learning project concept for classifying suspicious or spam messages.
 
-**Tech:** `React` `TypeScript` `Node.js` `PostgreSQL` `Python` `FastAPI`
+Focus: Python • Machine Learning • Text Classification
 
-<br>
+«Open each project repository for its implementation, setup instructions, and current progress.»
 
-### 🤖 AI-Powered Applications
+---
 
-Building intelligent applications that combine AI, automation, APIs and modern interfaces to solve real-world problems.
+📈 GitHub Overview
 
-</div>
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=shriharineural-stack&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub Statistics"/>
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shriharineural-stack&layout=compact&theme=tokyonight&hide_border=true" alt="Most Used Languages"/>
+</p><p align="center">
+  <img src="https://streak-stats.demolab.com?user=shriharineural-stack&theme=tokyonight&hide_border=true" width="90%" alt="GitHub Contribution Streak"/>
+</p>---
 
-<br>
+🌱 Currently Exploring
 
-<h2 align="center">📊 GITHUB ACTIVITY</h2>
+- Artificial Intelligence and Machine Learning
+- Python-based AI applications
+- React and TypeScript
+- Backend development and database integration
+- Computer vision and document verification
+- Git, GitHub, and collaborative development
 
-<div align="center">
+---
 
-<img src="https://github-readme-stats.vercel.app/api?username=shriharineural-stack&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" height="170" alt="Shri Hari GitHub Stats">
+🧠 My Developer Mindset
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=shriharineural-stack&theme=tokyonight&hide_border=true" height="170" alt="GitHub Streak">
+«Learn continuously. Build practically. Solve real problems. Improve every day.»
 
-</div>
+I believe the best way to learn technology is to build projects, understand how they work, test ideas, and keep improving.
 
-<br>
+---
 
-<h2 align="center">🐍 CONTRIBUTION JOURNEY</h2>
+🤝 Let's Connect
 
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shriharineural-stack&theme=tokyonight" width="100%" alt="Contribution Summary">
-
-</div>
-
-<br>
-
-<h2 align="center">🎯 CURRENTLY EXPLORING</h2>
-
-<div align="center">
-
-`Artificial Intelligence` • `Machine Learning` • `Full Stack Development` • `Cloud` • `Automation` • `UI/UX`
-
-</div>
-
-<br>
-
-<h2 align="center">⚡ DEVELOPER MINDSET</h2>
-
-<div align="center">
-
-> **Think. Build. Break. Improve. Repeat.**
-
-</div>
-
-<br>
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/shriharineural-stack/shriharineural-stack/main/assets/connect-background.svg" width="100%" alt="Shri Hari Blue Neon Connect Banner">
-
-</div>
-
-<br>
-
-<div align="center">
-
-<a href="https://github.com/shriharineural-stack">
-<img src="https://img.shields.io/badge/GitHub-SHRI%20HARI-00BFFF?style=for-the-badge&logo=github&logoColor=white" alt="Shri Hari GitHub Profile">
-</a>
-
-<br><br>
-
-<img src="https://komarev.com/ghpvc/?username=shriharineural-stack&style=for-the-badge&color=00BFFF&label=PROFILE+VIEWS" alt="Profile Views">
-
-<br><br>
-
-**⚡ Building the future, one project at a time.**
-
-</div>
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/shriharineural-stack/shriharineural-stack/main/assets/connect-background.svg"
+    alt="SHRI HARI - Let's Connect"
+    width="100%"
+  />
+</p><p align="center">
+  <a href="https://github.com/shriharineural-stack">
+    <img src="https://img.shields.io/badge/GitHub-Follow%20Me-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile"/>
+  </a>
+</p><p align="center">
+  <img src="https://komarev.com/ghpvc/?username=shriharineural-stack&style=for-the-badge&color=0077ff" alt="Profile Views"/>
+</p><p align="center">
+  <b>SHRI HARI • BUILD • CREATE • INNOVATE</b>
+</p>
