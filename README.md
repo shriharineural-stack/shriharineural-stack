@@ -92,8 +92,16 @@ Focus: Python • Machine Learning • Text Classification
 📈 Contribution Activity
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=shriharineural-stack&theme=tokyo-night" width="100%" alt="GitHub Contribution Activity"/>
-</p>---
+  <img
+    src="https://ghchart.rshah.org/0077ff/shriharineural-stack"
+    alt="Shri Hari GitHub Contribution Graph"
+    width="100%"
+  />
+</p><p align="center">
+  <a href="https://github.com/shriharineural-stack">
+    <img src="https://img.shields.io/badge/View%20All%20Contributions-GitHub-0077ff?style=for-the-badge&logo=github" alt="View GitHub Contributions"/>
+  </a>
+</p>
 
 🌱 Currently Exploring
 
