@@ -105,7 +105,7 @@ Building intelligent applications that combine AI, automation, APIs and modern i
 
 <div align="center">
 
-<img src="./assets/connect-background.svg" width="100%" alt="Shri Hari Blue Neon Connect Banner">
+<img src="https://raw.githubusercontent.com/shriharineural-stack/shriharineural-stack/main/assets/connect-background.svg" width="100%" alt="Shri Hari Blue Neon Connect Banner">
 
 </div>
 
